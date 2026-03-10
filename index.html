@@ -3,180 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawn Maintenance Agreement - Holland Family Home Services</title>
+    <title>Project Proposal Template - Holland Family Home Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f9fafb;
+            background-color: #f3f4f6;
             color: #1f2937;
         }
-
-        .proposal-container {
-            max-width: 850px;
-            margin: 2rem auto;
-            background: white;
-            padding: 3rem;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        canvas {
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            background-color: #f9fafb;
+            cursor: crosshair;
         }
-
-        .header-accent {
-            height: 8px;
-            background: linear-gradient(90deg, #166534 0%, #22c55e 100%);
-            border-radius: 8px 8px 0 0;
-            margin: -3rem -3rem 2rem -3rem;
-        }
-
-        .section-title {
-            color: #166534;
-            border-bottom: 2px solid #f3f4f6;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.25rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-size: 0.875rem;
-        }
-
-        .service-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 0.75rem;
-        }
-
-        .service-icon {
-            color: #22c55e;
-            margin-right: 0.75rem;
-            margin-top: 0.25rem;
-        }
-
         @media print {
-            body { background-color: white; }
-            .proposal-container { 
-                box-shadow: none; 
-                margin: 0; 
-                padding: 2rem;
-                max-width: 100%;
-            }
-            .no-print { display: none; }
+            body { background-color: white; padding: 0; }
+            #proposal-content { box-shadow: none; width: 100%; max-width: none; margin: 0; padding: 0; }
+            button, .no-print { display: none !important; }
+            .page-break { page-break-before: always; }
         }
     </style>
 </head>
-<body>
+<body class="p-4 sm:p-10">
 
-    <div class="proposal-container">
-        <div class="header-accent"></div>
+    <div id="proposal-content" class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl p-6 sm:p-10">
+        
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">Holland Family Home Services, Inc.</h1>
+            <p class="text-md sm:text-lg text-gray-600 mt-2">70 Copperhead Trail, Murphy, NC â¢ 828-541-2442 â¢ TheHollandSeven@gmail.com</p>
+            <hr class="my-6 border-gray-300">
+            <h2 class="text-2xl sm:text-3xl font-semibold text-gray-700 uppercase">Project Proposal</h2>
+        </header>
 
-        <!-- Header Section -->
-        <div class="flex justify-between items-start mb-10">
-            <div>
-                <h1 class="text-3xl font-bold text-gray-900 leading-tight">Lawn Maintenance<br>Agreement</h1>
-                <p class="text-gray-500 mt-1">Ref: 17 Thunderbird Lane</p>
-            </div>
-            <div class="text-right">
-                <h2 class="text-xl font-bold text-green-800">Holland Family</h2>
-                <p class="text-sm font-semibold text-gray-600 tracking-widest uppercase">Home Services</p>
-                <p class="text-xs text-gray-400 mt-2">Marble, NC</p>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-2 gap-8 mb-10 bg-gray-50 p-6 rounded-lg border border-gray-100">
-            <div>
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Prepared For</p>
-                <p class="font-semibold text-gray-800">Mark & Karri Bailey</p>
-                <p class="text-gray-600 text-sm">17 Thunderbird Lane</p>
-                <p class="text-gray-600 text-sm">Marble, NC 28905</p>
-            </div>
-            <div>
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Agreement Date</p>
-                <p class="font-semibold text-gray-800">March 10, 2026</p>
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mt-3 mb-1">Contractor</p>
-                <p class="font-semibold text-gray-800 text-sm">Holland Family Home Services</p>
-            </div>
-        </div>
-
-        <!-- Scope of Services -->
-        <div class="mb-10">
-            <h3 class="section-title">Scope of Work</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="service-item">
-                    <span class="service-icon">✓</span>
-                    <p class="text-gray-700 text-sm"><span class="font-semibold">Mowing:</span> Professional cutting of all established lawn areas at appropriate height for season.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">✓</span>
-                    <p class="text-gray-700 text-sm"><span class="font-semibold">Trimming:</span> Detailed string trimming around all plant beds, trees, fences, and obstacles.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">✓</span>
-                    <p class="text-gray-700 text-sm"><span class="font-semibold">Blowing:</span> All hard surfaces (driveways, walkways, deck) cleared of clippings and debris.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">✓</span>
-                    <p class="text-gray-700 text-sm"><span class="font-semibold">Edging:</span> Periodic mechanical edging of driveway and walkway borders as required.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Frequency & Scheduling -->
-        <div class="mb-10">
-            <h3 class="section-title">Schedule & Frequency</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-                Services will be performed on a <span class="font-semibold">biweekly basis</span> or <span class="font-semibold">as needed</span> based on grass growth and weather conditions. Scheduling will be coordinated to align with ongoing site work currently being performed by the Contractor.
-            </p>
-        </div>
-
-        <!-- Investment Section -->
-        <div class="mb-10">
-            <h3 class="section-title">Investment & Payment</h3>
-            <div class="bg-green-50 border border-green-100 p-6 rounded-lg flex justify-between items-center">
+        <section class="prose max-w-none text-gray-700">
+            <div class="grid grid-cols-2 gap-4 mb-6">
                 <div>
-                    <p class="text-green-800 font-bold text-lg">Lawn Service Fee</p>
-                    <p class="text-green-600 text-sm italic">Standard rate per visit</p>
+                    <p class="mb-1 font-bold">Project Location:</p>
+                    <p class="italic text-gray-500">[Client Name]</p>
+                    <p class="italic text-gray-500">[Project Street Address]</p>
+                    <p class="italic text-gray-500">[City, State, Zip]</p>
                 </div>
                 <div class="text-right">
-                    <p class="text-3xl font-bold text-green-900">$125.00</p>
-                    <p class="text-xs text-green-700 uppercase font-bold tracking-tighter">Per Visit</p>
+                    <p class="mb-1 font-bold">Date of Issue:</p>
+                    <p id="current-date-display">January 19, 2026</p>
+                    <p class="mt-2 font-bold text-indigo-600">Quote ID: HF-[ID-NUMBER]</p>
                 </div>
             </div>
-            <div class="mt-4 text-sm text-gray-600 space-y-2">
-                <p>• Invoices will be issued <span class="font-semibold">after each visit</span>.</p>
-                <p>• Payment is due within <span class="font-semibold">7 days</span> of the invoice date.</p>
+
+            <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Project Summary</h3>
+            <p class="mb-6">This proposal outlines the scope of work for <strong>[Insert Project Title Here]</strong>. Our goal is to provide a high-quality, durable solution using professional-grade materials and industry-standard construction techniques.</p>
+        </section>
+
+        <!-- PROJECT SELECTION SECTION -->
+        <div class="space-y-6">
+            <h4 class="text-lg font-bold text-gray-800 border-b border-gray-300 pb-2">Investment Detail</h4>
+            
+            <div class="p-6 bg-gray-50 rounded-lg shadow-sm border-2 border-indigo-200">
+                <label class="flex items-start">
+                    <input type="checkbox" checked disabled class="mt-1 h-6 w-6 text-indigo-600 rounded cursor-default">
+                    <span class="ml-4 flex-1 text-base">
+                        <span class="text-lg font-semibold text-gray-900 block">[Primary Scope of Work Title]</span>
+                        <div class="text-gray-600 mt-2 text-sm sm:text-base">
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>[Item 1: Description of material or task]</li>
+                                <li>[Item 2: Description of material or task]</li>
+                                <li>[Item 3: Description of material or task]</li>
+                                <li>[Item 4: Description of material or task]</li>
+                                <li>[Item 5: Description of material or task]</li>
+                            </ul>
+                        </div>
+                        <span id="base-price-display" class="text-2xl font-bold text-green-700 mt-4 block">$0.00</span>
+                    </span>
+                </label>
             </div>
         </div>
 
-        <!-- Legal/Termination -->
-        <div class="mb-12">
-            <h3 class="section-title">Terms</h3>
-            <p class="text-gray-600 text-xs italic leading-relaxed">
-                Either party may terminate this agreement at any time with 7 days written or verbal notice. This agreement is intended to supplement existing service arrangements between Holland Family Home Services and the Baileys.
-            </p>
+        <section class="prose max-w-none text-gray-700 mt-10">
+            <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Total Quote Summary</h3>
+        </section>
+
+        <div class="mt-6 p-6 bg-indigo-50 rounded-lg shadow-md">
+            <!-- Credit Card Toggle -->
+            <div class="mb-4 flex items-center justify-end border-b border-indigo-200 pb-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="checkbox" id="use-credit-card" class="h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500">
+                    <span class="ml-2 text-sm font-medium text-gray-700">Pay with Credit Card (Adds 4% Bank Fee)</span>
+                </label>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+                <div>
+                    <h4 class="text-xl font-bold text-indigo-800 mb-1 sm:mb-0">Total Contract Price:</h4>
+                    <p id="fee-notice" class="text-xs text-indigo-600 hidden">(Includes 4% CC Processing Fee)</p>
+                </div>
+                <span id="total-price" class="text-3xl font-extrabold text-indigo-800">$0.00</span>
+            </div>
         </div>
 
-        <!-- Signature Block -->
-        <div class="grid grid-cols-2 gap-12 pt-8 border-t border-gray-100">
+        <section class="prose max-w-none text-gray-700 mt-8">
+            <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4">Acceptance & Payment Schedule</h3>
+            <p class="mb-6 font-semibold">The total contract price is split into two payments:</p>
+
+            <ul class="list-disc list-inside ml-4 space-y-2">
+                <li><strong>Deposit (50%):</strong> $<span id="payment-1-amount">0.00</span> Due upon signing (for materials/scheduling).</li>
+                <li><strong>Final Payment (50%):</strong> $<span id="payment-2-amount">0.00</span> Due upon substantial completion.</li>
+            </ul>
+
+            <div class="mt-8 grid sm:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-2"><strong>Estimated Duration:</strong> [Number] Working Days</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-8 grid sm:grid-cols-2 gap-8">
             <div>
-                <div class="h-12 border-b border-gray-300"></div>
-                <p class="mt-2 text-xs font-bold text-gray-400 uppercase tracking-widest">Mark or Karri Bailey</p>
-                <p class="text-gray-400 text-xs mt-1">Client Signature</p>
+                <label for="client-name" class="block text-sm font-medium text-gray-700">Client Printed Name</label>
+                <input type="text" id="client-name" placeholder="Client Name" class="mt-1 block w-full bg-gray-100 px-3 py-2 border border-gray-400 rounded-md">
             </div>
             <div>
-                <div class="h-12 border-b border-gray-300"></div>
-                <p class="mt-2 text-xs font-bold text-gray-400 uppercase tracking-widest text-right">Holland Family Home Services</p>
-                <p class="text-gray-400 text-xs mt-1 text-right">Contractor Signature</p>
+                <label for="date" class="block text-sm font-medium text-gray-700">Date</label>
+                <input type="date" id="date" class="mt-1 block w-full bg-gray-100 px-3 py-2 border border-gray-400 rounded-md">
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <label for="signature-pad" class="block text-sm font-medium text-gray-700">Client Signature</label>
+            <canvas id="signature-pad" width="400" height="150" class="mt-1 w-full sm:w-[400px]"></canvas>
+            <div class="mt-2 sm:w-[400px] text-right">
+                <button onclick="clearSignature()" class="text-sm text-gray-500 hover:text-gray-700 underline no-print">Clear Signature</button>
+            </div>
+        </div>
+
+        <div class="mt-10 pt-6 border-t-2 border-dashed border-gray-300 no-print">
+            <div class="mt-6 flex justify-center space-x-4">
+                <button onclick="window.print()" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-colors">
+                    Save as PDF / Print
+                </button>
             </div>
         </div>
         
-        <div class="mt-12 text-center no-print">
-            <button onclick="window.print()" class="bg-green-700 text-white px-6 py-2 rounded-full font-semibold text-sm hover:bg-green-800 transition-colors shadow-lg">
-                Print or Save as PDF
-            </button>
+        <!-- ADDENDUM SECTION -->
+        <div class="mt-12 pt-6 border-t border-gray-300 page-break">
+             <h3 class="text-xl sm:text-2xl font-bold mt-8 mb-4 text-center">APPENDIX: DETAILED SPECIFICATIONS</h3>
+             <hr class="my-4 border-gray-300">
+
+            <div class="grid sm:grid-cols-2 gap-8 text-sm text-gray-700">
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-2">Materials & Structure</h4>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>[Detail 1]</li>
+                        <li>[Detail 2]</li>
+                        <li>[Detail 3]</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800 mb-2">Fasteners & Finishes</h4>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>[Detail A]</li>
+                        <li>[Detail B]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 p-4 bg-gray-50 rounded border border-gray-200 text-sm text-gray-600 italic">
+                <p><strong>Exclusions:</strong> [List items not included, e.g., permits, painting, electrical, etc.]</p>
+            </div>
         </div>
     </div>
 
+    <script>
+        // --- EDIT THESE VALUES FOR NEW PROJECTS ---
+        const BASE_PRICE = 0.00; // Change this to your quote total
+        const CC_FEE = 0.04;    // 4% Credit Card Fee
+        // ------------------------------------------
+
+        const ccCheckbox = document.getElementById('use-credit-card');
+        const totalPriceEl = document.getElementById('total-price');
+        const feeNoticeEl = document.getElementById('fee-notice');
+        const payment1El = document.getElementById('payment-1-amount');
+        const payment2El = document.getElementById('payment-2-amount');
+        const basePriceDisplay = document.getElementById('base-price-display');
+
+        function updateProposal() {
+            basePriceDisplay.textContent = `$${BASE_PRICE.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            
+            let total = BASE_PRICE;
+            if (ccCheckbox.checked) {
+                total = BASE_PRICE * (1 + CC_FEE);
+                feeNoticeEl.classList.remove('hidden');
+            } else {
+                feeNoticeEl.classList.add('hidden');
+            }
+            
+            const formattedTotal = total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            totalPriceEl.textContent = `$${formattedTotal}`;
+
+            const split = total * 0.5;
+            payment1El.textContent = split.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            payment2El.textContent = split.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        ccCheckbox.addEventListener('change', updateProposal);
+        updateProposal();
+
+        // --- Signature Pad Logic ---
+        const canvas = document.getElementById('signature-pad');
+        const ctx = canvas.getContext('2d');
+        let drawing = false;
+
+        function resizeCanvas() {
+            const ratio = Math.max(window.devicePixelRatio || 1, 1);
+            const w = canvas.offsetWidth;
+            const h = canvas.offsetHeight;
+            canvas.width = w * ratio;
+            canvas.height = h * ratio;
+            ctx.scale(ratio, ratio);
+        }
+        window.addEventListener('resize', resizeCanvas);
+        setTimeout(resizeCanvas, 200);
+
+        function getPos(evt) {
+            const rect = canvas.getBoundingClientRect();
+            const clientX = evt.touches ? evt.touches[0].clientX : evt.clientX;
+            const clientY = evt.touches ? evt.touches[0].clientY : evt.clientY;
+            return { x: clientX - rect.left, y: clientY - rect.top };
+        }
+
+        function start(e) {
+            drawing = true;
+            const pos = getPos(e);
+            ctx.beginPath();
+            ctx.moveTo(pos.x, pos.y);
+            ctx.strokeStyle = '#1e293b';
+            ctx.lineWidth = 2;
+        }
+
+        function draw(e) {
+            if (!drawing) return;
+            const pos = getPos(e);
+            ctx.lineTo(pos.x, pos.y);
+            ctx.stroke();
+            if (e.cancelable) e.preventDefault();
+        }
+
+        function stop() { drawing = false; }
+
+        canvas.addEventListener('mousedown', start);
+        canvas.addEventListener('mousemove', draw);
+        window.addEventListener('mouseup', stop);
+        canvas.addEventListener('touchstart', (e) => { if(e.target === canvas) { e.preventDefault(); start(e); } }, {passive: false});
+        canvas.addEventListener('touchmove', (e) => { if(e.target === canvas) { e.preventDefault(); draw(e); } }, {passive: false});
+        canvas.addEventListener('touchend', stop);
+
+        function clearSignature() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    </script>
 </body>
 </html>
-
